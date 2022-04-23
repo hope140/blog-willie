@@ -8,7 +8,7 @@ type TagProps = {
 const Tag = ({ tag }: TagProps): ReactElement => {
   return (
     <Link href={`/${tag}`}>
-      <a className="tag">{tag}</a>
+      <a>{tag}</a>
     </Link>
   );
 };
