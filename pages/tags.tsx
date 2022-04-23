@@ -23,7 +23,6 @@ const TagsPage = ({ tags }: TagsProps): ReactNode => {
           </>
         );
       })}
-      <Footer />
     </Layout>
   );
 };
