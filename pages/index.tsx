@@ -5,7 +5,6 @@ import PostsList from "@/components/PostsList";
 import Layout from "@/components/layouts";
 import { generateMainFeeds } from "@/lib/feeds";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 type WritingsOverviewProps = {
   allPosts: PartialFrontMatter[];
