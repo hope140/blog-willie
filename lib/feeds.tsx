@@ -11,10 +11,10 @@ import { getPostsWithContent, PostData } from "@/lib/get-posts";
 
 const buildFeed = (): Feed => {
   return new Feed({
-    title: "Willie",
-    description: "RSS for blog",
-    id: "https://www.wll.moe",
-    link: "https://www.wll.moe",
+    title: "Your Title",
+    description: "Your Description",
+    id: "Full URL",
+    link: "Full URL",
     language: "en",
     copyright: copyright,
     feedLinks: {
