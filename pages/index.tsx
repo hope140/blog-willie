@@ -4,7 +4,6 @@ import { getPostsFrontMatter, PartialFrontMatter } from "@/lib/get-posts";
 import PostsList from "@/components/PostsList";
 import Layout from "@/components/layouts";
 import { generateMainFeeds } from "@/lib/feeds";
-import Nav from "@/components/Nav";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
