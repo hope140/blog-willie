@@ -10,35 +10,29 @@ type PostProps = {
 };
 
 const Post = ({ frontMatter }: PostProps): ReactElement => (
-  <div className="post-item">
-    <h3>
+<div>
+  <h3>
       <Link href={`/posts/${frontMatter.slug}`}>
-        <a className="post-item-title">{frontMatter.title}</a>
+        <a>{frontMatter.title}</a>
       </Link>
     </h3>
-    <p className="post-item-desc">
+    <p>
       {frontMatter.description}
-      <Link href={`/posts/${frontMatter.slug}`}>
-        <a className="post-item-more">Read More →</a>
-      </Link>
     </p>
-    <time className="post-item-date">
+    <time>
       {new Date(frontMatter.date).toDateString()}
     </time>
   </div>
 );
 const PostSummary = ({ frontMatter }: PostProps): ReactElement => (
-  <div className="post-item">
+  <div>
     <h3>
       <Link href={`/posts/${frontMatter.slug}`}>
-        <a className="post-item-title">{frontMatter.title}</a>
+        <a>{frontMatter.title}</a>
       </Link>
     </h3>
-    <p className="post-item-desc">
-      {frontMatter.description}{" "}
-      <Link href={`/posts/${frontMatter.slug}`}>
-        <a className="post-item-more">Read More →</a>
-      </Link>
+    <p>
+      {frontMatter.description}
     </p>
   </div>
 );
