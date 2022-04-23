@@ -4,7 +4,7 @@
 
 支持 Kate数学公式渲染，阅读时间，多标签，代码高亮，RSS，标题锚点，代码标题，typographic语法等功能
 
-你可以 fork 改项目，然后到 Vercel 里进行部署
+你可以 fork 该项目，然后到 Vercel 里进行部署
 
 ### 例举typographic语法
 
