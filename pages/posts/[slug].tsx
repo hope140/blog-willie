@@ -6,25 +6,17 @@ import Tag from "@/components/Tag";
 import { MDXComponents } from "@/components/MDXComponents";
 import Layout from "@/components/layouts";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 const ArticlePage = ({ mdxSource, frontMatter }: PostData): ReactNode => {
   return (
     <Layout title={frontMatter.title} description={frontMatter.description}>
       <h1>{frontMatter.title}</h1>
-      <div className="meta-line">
-        <div className="meta">
           <time>{new Date(frontMatter.date).toDateString()} • </time>
           {frontMatter.tags.map((t) => (
             <Tag key={t} tag={t} />
           ))}
-        </div>
-        <Link href="/">
-          <a className="meta-back">Back</a>
-        </Link>
-      </div>
+        {frontMatter.readingTime}
       <MDXRemote components={MDXComponents} {...mdxSource} />
-      <Footer />
     </Layout>
   );
 };
