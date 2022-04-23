@@ -7,8 +7,6 @@ import { MDXRemote } from "next-mdx-remote";
 import { MDXComponents } from "@/components/MDXComponents";
 import Link from "next/link";
 import Layout from "@/components/layouts";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 
 type TagProps = {
   tag: string;
@@ -18,12 +16,8 @@ type TagProps = {
 const TagPage = ({ tag, posts }: TagProps): ReactNode => {
   return (
     <Layout title={tag}>
-      <Nav>
-        <Link href="/">Blog Posts</Link>
-      </Nav>
       <h1>Tag &quot;{tag}&quot;</h1>
       <PostsList posts={posts} />
-      <Footer />
     </Layout>
   );
 };
