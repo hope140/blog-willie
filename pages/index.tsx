@@ -14,13 +14,9 @@ const WritingsOverviewPage = ({
   allPosts,
 }: WritingsOverviewProps): ReactNode => (
   <Layout title="Blog Index">
-    <Nav>
-      <Link href="tags">All Tags</Link>
-    </Nav>
     <ul>
       <PostsList posts={allPosts} />
     </ul>
-    <Footer />
   </Layout>
 );
 
