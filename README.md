@@ -20,7 +20,7 @@
 
 999 >> 5;     // 999999 ≫ 5
 
-arrow -> right;    // arrow → right
+arrow -> right;     // arrow → right
 
 *高级级功能
 
