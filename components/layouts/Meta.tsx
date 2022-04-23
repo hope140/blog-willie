@@ -11,8 +11,8 @@ export type MetaProps = {
 };
 
 const defaultMeta: MetaProps = {
-  title: "Willie&quot;s blog",
-  description: "Willie&quot;s blog",
+  title: "Default Title",
+  description: "Default description",
 };
 
 const Meta = (metaProps: MetaProps): ReactElement => {
