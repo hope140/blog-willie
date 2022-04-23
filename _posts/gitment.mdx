@@ -1,0 +1,28 @@
+---
+title: "Gitment fix record"
+date: "2021-08-25"
+description: "A record about fixing gitment"
+tags: ["gitment"]
+---
+
+> I couldn't run it correctly. According to search, I found the reason and the fix method. So how can we fix it?
+
+Due to unknown case, the maintainer don't update it with a long time. So the server get some problems.
+
+# Start
+
+We can archieve it on Heroku clound!
+
+- Log in [Heroku](https://www.heroku.com)
+
+- Fork the [server sources](https://github.com/imsun/gh-oauth-server)
+
+- Edit the package.json. Add "heroku": "NODE_ENV=production node server" in "scripts"
+
+- Create Procfile, add web: npm run heroku, then create **app.json**, add "name": "gh-oauth-server"
+
+- Open [heroku](https://heroku.com/deploy?template=URL), where URL is changed to a fork address e.g. github.com/USERNAME/gh-oauth-server
+
+- Create the software. Change the original gh-oauth.imsun.net to "YourAppName".herokuapp.com
+
+Enjoy~

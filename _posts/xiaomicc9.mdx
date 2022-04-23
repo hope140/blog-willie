@@ -1,0 +1,30 @@
+---
+title: "How Mi cc9e Flash into custom Android"
+date: "2021-06-25"
+description: "How Mi cc9e Flash into custom Android"
+tags: ["Android"]
+---
+
+> Two ROMs are provided, both of which need to unlock BL and flash in [TWRP](https://mifirm.net/downloadtwrp/151), And [EU ROM](https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.6.11/xiaomi.eu_multi_MICC9e_20.6.11_v12-10.zip/download)
+
+# ROM#1
+
+> This is A3 ROM, but it works fine
+
+1. Dowdload [Crdorid ROM](https://crdroid.net/laurel_sprout)
+2. Download [exe](https://androidfilehost.com/?fid=818070582850510260)
+3. Unzip payload_dumper.zip. Include payload_imput,payload_output and payload.exe
+4. Extrqct Crdroid_rom.zip, copy payload.bin to payload_input
+5. Run payload_dumper.exe, wait it colsed,then get psystem.img from payload_output
+6. Erase `data` and `cache`, flash system.img
+7. `Please don't reboot`, flash [magisk 20.x](https://github.com/topjohnwu/Magisk/releases/download/v20.4/Magisk-v20.4.zip)
+8. Enjoy it~
+
+# ROM#2
+
+> This is a Android 10 GSI
+
+1. [Download](https://github.com/phhusson/treble_experimentations/releases/download/v219/system-quack-arm64-ab-gapps.img.xz)
+2. Enjoy it~
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/150px-Android_logo_2019_%28stacked%29.svg.png)
