@@ -57,7 +57,7 @@ yarn add @mdx-js/loader gray-matter next-mdx-remote next-compose-plugins rehype 
 
 ### 编写文件
 
-- 编写 **package.json**:
+编写 **package.json**:
 
 ```json
 {
@@ -97,7 +97,7 @@ yarn add @mdx-js/loader gray-matter next-mdx-remote next-compose-plugins rehype 
 
 > 请将 **name**，**author** 等个人信息自行修改
 
-- 编写 **next.config.js**
+编写 **next.config.js**
 
 ```javascript
 module.exports = {
@@ -125,14 +125,14 @@ module.exports = {
 }
 ```
 
-- 编写 **.prettierignore**
+编写 **.prettierignore**
 
 ```json
 node_modules
 .next
 ```
 
-- 编写 **prettier.config.js**
+编写 **prettier.config.js**
 
 ```javascript
 const options = {
@@ -146,11 +146,11 @@ const options = {
 };
 ```
 
-- 创建自定义样式
+创建自定义样式
 
 在 `styles/global.css` 里将你所需要样式填写进去
 
-- 创建获取文章内容的 JS
+创建获取文章内容的 JS
 
 在 `lib/mdx.js` 里写入以下内容
 
@@ -205,7 +205,7 @@ export async function getAllFilesFrontMatter(type) {
 
 > 这段代码获取了文件名作为路径，用 **front-matter** 获取了 **Markdown** 文件的内容和媒体，感兴趣的可以在 [NextJS](https://nextjs.org) 文档中找到相关介绍！
 
-- 编写 `pages/_app.js`
+编写 `pages/_app.js`
 
 ```javascript
 import "../styles/global.css";
@@ -215,7 +215,7 @@ export default function App({ Component, pageProps }) {
 }
 ```
 
-- 编写 `components/BlogPost/index.js`
+编写 `components/BlogPost/index.js`
 
 ```javascript
 import NextLink from "next/link";
@@ -238,7 +238,7 @@ export default BlogPost;
 
 > 该代码生成文章列表，根据自己需求编写。
 
-- 导航栏 Nav 的例子，编写 `components/Nav/index.js`
+导航栏 Nav 的例子，编写 `components/Nav/index.js`
 
 ```javascript
 const Nav = () => {
@@ -255,7 +255,7 @@ const Nav = () => {
 export default Nav;
 ```
 
-- 编写 `pages/index.js`
+编写 `pages/index.js`
 
 ```javascript
 import BlogPost from "../components/BlogPost";
@@ -303,7 +303,7 @@ export const getStaticProps = async () => {
 
 > 代码中的 Footer 可以参考 Nav 的编写。
 
-- 编写 `pages/[slug].js`
+编写 `pages/[slug].js`
 
 ```javascript
 import { MDXRemote } from "next-mdx-remote";
@@ -386,7 +386,7 @@ yarn run prettier
 
 > 在 `_posts` 中编写以 **.mdx** 后缀的 Markdown 文件
 
-- 例子
+例子
 
 ```md
 ---
