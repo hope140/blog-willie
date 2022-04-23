@@ -5,8 +5,6 @@ import React, { ReactNode } from "react";
 import { PostSummaryList } from "@/components/PostsList";
 import Link from "next/link";
 import Layout from "@/components/layouts";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 
 type TagsProps = {
   tags: [string, PartialFrontMatter[]][];
@@ -15,9 +13,6 @@ type TagsProps = {
 const TagsPage = ({ tags }: TagsProps): ReactNode => {
   return (
     <Layout title="All Tags">
-      <Nav>
-        <Link href="/">Blog Posts</Link>
-      </Nav>
       {tags.map(([tag, posts]) => {
         return (
           <>
