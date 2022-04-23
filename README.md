@@ -22,7 +22,7 @@
 
 arrow -> right;     // arrow → right
 
-*高级功能
+## *高级功能
 
 你可以自建组件，添加到MDXComponents，然后在文章中引用。
 
