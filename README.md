@@ -18,9 +18,9 @@
 
 2 << 100;   // 2 ≪ 10000
 
-999 >> 5;   // 999999 ≫ 5
+999 >> 5;     // 999999 ≫ 5
 
-arrow -> right; // arrow → right
+arrow -> right;    // arrow → right
 
 *高级级功能
 
